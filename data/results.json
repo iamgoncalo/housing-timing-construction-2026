@@ -4,8 +4,8 @@
       "scenario": "baseline",
       "completions": 480,
       "unmet_households": 612.0,
-      "unmet_household_years": 2420.2,
-      "qualified_dwelling_years": 1008.0,
+      "unmet_household_years": 2394.2,
+      "qualified_dwelling_years": 968.0,
       "end_wip": 120,
       "end_handover_queue": 0
     },
@@ -13,8 +13,8 @@
       "scenario": "faster_assembly",
       "completions": 618,
       "unmet_households": 529.2,
-      "unmet_household_years": 2308.0,
-      "qualified_dwelling_years": 1195.0,
+      "unmet_household_years": 2288.9,
+      "qualified_dwelling_years": 1143.5,
       "end_wip": 84,
       "end_handover_queue": 50
     },
@@ -22,8 +22,8 @@
       "scenario": "coordinated",
       "completions": 700,
       "unmet_households": 480.0,
-      "unmet_household_years": 2245.0,
-      "qualified_dwelling_years": 1300.0,
+      "unmet_household_years": 2230.0,
+      "qualified_dwelling_years": 1241.67,
       "end_wip": 120,
       "end_handover_queue": 20
     }

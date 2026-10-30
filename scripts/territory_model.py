@@ -2,7 +2,7 @@
 from pathlib import Path
 import csv,json,math
 R=Path(__file__).resolve().parents[1]
-PARAM=dict(horizon_months=60,initial_territorial_stock=10000,initial_unmet_households=300,new_need_per_month=10,parallel_sites=120,baseline_work_months=12,handover_months=1,matched_allocation_share=.6,quality_assumption='Every counted completion passes the same declared functional and structural acceptance gates',initial_pipeline='Empty new programme at month zero; existing territorial stock is tracked separately')
+PARAM=dict(horizon_months=60,initial_territorial_stock=10000,initial_unmet_households=300,new_need_per_month=10,parallel_sites=120,baseline_work_months=12,handover_months=1,matched_allocation_share=.6,quality_assumption='Every counted completion passes the same declared functional and structural acceptance gates',initial_pipeline='Empty new programme at month zero; existing territorial stock is tracked separately',event_timing='Admissions, arrivals and qualified completions occur at month end; dwelling-months and unmet-household-months integrate beginning-of-month stocks')
 def simulate(name,target_duration=6,gate_cap=14,allocation=.6):
  active=[];ready=[];handover=[];done=0;backlog=300.;sum_backlog=0.;rows=[];admitted=0;resident_months=0
  for month in range(1,61):
@@ -11,14 +11,14 @@ def simulate(name,target_duration=6,gate_cap=14,allocation=.6):
   speed=12/duration
   # End-of-month qualified handovers previously released to a one-month check/service gate.
   completions=sum(1 for release in handover if release==month);handover=[x for x in handover if x!=month]
-  done+=completions;resident_months+=done
+  resident_months+=done;done+=completions
   active=[x+speed for x in active]
   newly_ready=sum(1 for w in active if w>=12-1e-9);active=[w for w in active if w<12-1e-9]
   ready.extend([month]*newly_ready)
   released=min(gate_cap,len(ready));ready=ready[released:];handover.extend([month+1]*released)
   # Release construction slots only when physical assembly work finishes.
   starts=min(gate_cap,120-len(active));active.extend([0.]*starts);admitted+=starts
-  backlog=max(0.,backlog+10-allocation*completions);sum_backlog+=backlog
+  sum_backlog+=backlog;backlog=max(0.,backlog+10-allocation*completions)
   rows.append(dict(scenario=name,month=month,year=month/12,nominal_build_months=duration,work_speed=speed,starts=starts,construction_wip=len(active),handover_queue=len(ready)+len(handover),qualified_completions=completions,cumulative_completions=done,unmet_households=backlog,unmet_household_months=sum_backlog,qualified_dwelling_months=resident_months,programme_started=admitted))
  return rows
 def write(name,rows):

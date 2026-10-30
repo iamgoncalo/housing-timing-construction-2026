@@ -54,6 +54,7 @@ res=dict(units=854,floor_units=126,wall_units=282,roof_units=126,temporary_units
 # Compact equal-scale axonometric engineering plates, with diagrammatic roof transparency.
 INK='#213D42';TEAL='#427D79';GOLD='#B07D46';MUTED='#6A7A7C';PAPER='#F4F1EA'
 def txt(c,x,y,s,size=21,b=False,col=INK):
+ size=max(21,size)
  c.setFont('VB' if b else 'V',size);c.setFillColor(HexColor(col));c.drawString(x,y,s)
 def poly(c,pts,col,alpha=1,stroke='#9B9F9A'):
  c.saveState();c.setFillAlpha(alpha);c.setStrokeAlpha(max(.55,alpha));c.setFillColor(HexColor(col));c.setStrokeColor(HexColor(stroke));c.setLineWidth(.45);p=c.beginPath();p.moveTo(*pts[0]);[p.lineTo(*v) for v in pts[1:]];p.close();c.drawPath(p,stroke=1,fill=int(alpha>0));c.restoreState()
@@ -99,7 +100,7 @@ for part in range(3):
    txt(c,left+24,540,'Proposed rib-to-roof route',18,col=GOLD)
   if k in [6,7,8]:
    arr([P(4.05,1.,2.64),P(4.05,1.,.24),P(4.05,1.,0)],TEAL)
-   txt(c,left+24,540,'Accepted wall-to-ground path required',17,col=TEAL)
+   txt(c,left+24,540,'Required wall-to-ground path',17,col=TEAL)
   yy=235
   for ss in notes[k]:
    words=ss.split();line=''

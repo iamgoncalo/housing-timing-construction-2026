@@ -24,9 +24,15 @@ python3 scripts/release_benchmark.py
 
 The selected numerical outputs reproduce within 1e-8 absolute tolerance across the checked Python versions; discrete inventory, contacts and decision counts require exact equality. Reference output hashes are in `manifest.sha256.json`. Geometry and state assignments are prescribed reference cases, rather than solved autonomous motion trajectories. Diagnostic noise and loading inputs are selected assumptions.
 
+## Timing correction in version 1.0.1
+
+Admissions, need arrivals and qualified completions occur at month end. Dwelling-months and unmet-household-months integrate beginning-of-month stocks. This corrects the one-month overcount in dwelling service and aligns backlog exposure with the same convention. Completion totals and allocation results are unchanged. Corrected dwelling-years are 968.0, 1143.5 and 1241.67.
+
+Independent verification is available through `python3 scripts/final_independent_checks.py` (NumPy required). It checks elastic cases using finite elements, valuation using a geometric series, connectivity using union-find, and delivery using cohorts.
+
 ## Citation and version
 
-Please use `CITATION.cff`. Version 1.0.0 identifies this computational deposit. A GitHub release is a public versioned repository record; no DOI is claimed. The article's citation points to this record and its exact commit.
+Please use `CITATION.cff`. Version 1.0.1 identifies this computational deposit. A GitHub release is a public versioned repository record; no DOI is claimed. The article's citation points to this record and its exact commit.
 
 ## Funding and tools
 

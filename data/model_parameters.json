@@ -8,5 +8,6 @@
   "handover_months": 1,
   "matched_allocation_share": 0.6,
   "quality_assumption": "Every counted completion passes the same declared functional and structural acceptance gates",
-  "initial_pipeline": "Empty new programme at month zero; existing territorial stock is tracked separately"
+  "initial_pipeline": "Empty new programme at month zero; existing territorial stock is tracked separately",
+  "event_timing": "Admissions, arrivals and qualified completions occur at month end; dwelling-months and unmet-household-months integrate beginning-of-month stocks"
 }
