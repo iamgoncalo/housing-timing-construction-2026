@@ -1,0 +1,57 @@
+{
+  "scenarios": [
+    {
+      "scenario": "baseline",
+      "completions": 480,
+      "unmet_households": 612.0,
+      "unmet_household_years": 2420.2,
+      "qualified_dwelling_years": 1008.0,
+      "end_wip": 120,
+      "end_handover_queue": 0
+    },
+    {
+      "scenario": "faster_assembly",
+      "completions": 618,
+      "unmet_households": 529.2,
+      "unmet_household_years": 2308.0,
+      "qualified_dwelling_years": 1195.0,
+      "end_wip": 84,
+      "end_handover_queue": 50
+    },
+    {
+      "scenario": "coordinated",
+      "completions": 700,
+      "unmet_households": 480.0,
+      "unmet_household_years": 2245.0,
+      "qualified_dwelling_years": 1300.0,
+      "end_wip": 120,
+      "end_handover_queue": 20
+    }
+  ],
+  "engineering": {
+    "roof_design_assumptions": {
+      "span_m": 3.6,
+      "tributary_width_m": 0.6,
+      "uniform_area_load_kN_m2": 1.5,
+      "deflection_limit_span_ratio": 300
+    },
+    "line_load_kN_m": 0.9,
+    "bending_moment_kNm": 1.4580000000000002,
+    "end_reaction_kN": 1.62,
+    "deflection_limit_mm": 12.0,
+    "required_EI_N_m2": 164025.0,
+    "moving_module_mass_kg": 15,
+    "lever_arm_m": 0.6,
+    "static_lifting_torque_Nm": 88.29,
+    "lift_height_m": 2.7,
+    "minimum_lift_work_J": 397.30500000000006,
+    "insulation_U_W_m2K": 0.23980815347721823,
+    "effective_U_at_10_percent_bridge": 0.41582733812949646,
+    "finance_example": {
+      "average_tied_capital_currency": 75000,
+      "annual_rate": 0.05,
+      "months_saved": 6,
+      "saving_currency": 1875.0
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "grid": [
+    8,
+    8
+  ],
+  "neighbourhood": "orthogonal undirected nearest neighbours",
+  "failed_nodes": 8,
+  "seed": 20261030,
+  "dispersed_cases": 2000,
+  "column_cases": 8,
+  "reference_coordinator": [
+    0,
+    0
+  ],
+  "interpretation": "Static communication connectivity experiment; surviving components are communication opportunities, not evidence of task completion or structural stability."
+}

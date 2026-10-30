@@ -1,0 +1,4 @@
+scenario,completions,unmet_households,unmet_household_years,qualified_dwelling_years,end_wip,end_handover_queue
+baseline,480,612.0,2420.2,1008.0,120,0
+faster_assembly,618,529.2,2308.0,1195.0,84,50
+coordinated,700,480.0,2245.0,1300.0,120,20

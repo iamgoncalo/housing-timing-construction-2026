@@ -1,0 +1,17 @@
+{
+  "seed": 20261030,
+  "paired_truth_cases": 2000,
+  "observation_regimes": 3,
+  "policies": 5,
+  "total_decisions": 30000,
+  "sigma_log_observation": 0.15,
+  "true_k_median_MNm_rad": 0.35,
+  "true_k_sigma_log": 0.45,
+  "shared_positive_bias_multiplier": 1.35,
+  "stale_current_to_recorded_multiplier": 0.6,
+  "stale_age": 2,
+  "maximum_accepted_age": 1,
+  "one_sided_normal_quantile": 1.645,
+  "criterion": "Selected 13 mm static deflection, exact reference strip; all other properties held fixed",
+  "interpretation": "Synthetic support-release diagnostic benchmark; truth reference is an upper-information comparator, not an implementable local controller; no hardware, movement, or complete safety result."
+}

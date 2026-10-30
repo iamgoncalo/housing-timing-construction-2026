@@ -1,0 +1,16 @@
+allocation_share,scenario,unmet_households
+0.25,baseline,780.0
+0.25,faster_assembly,745.5
+0.25,coordinated,725.0
+0.4,baseline,707.9999999999992
+0.4,faster_assembly,652.799999999999
+0.4,coordinated,620.0
+0.6,baseline,612.0000000000008
+0.6,faster_assembly,529.200000000001
+0.6,coordinated,480.0
+0.8,baseline,516.0000000000005
+0.8,faster_assembly,405.60000000000053
+0.8,coordinated,340.0
+1.0,baseline,420.0
+1.0,faster_assembly,282.0
+1.0,coordinated,200.0

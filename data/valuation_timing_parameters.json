@@ -1,0 +1,28 @@
+{
+  "cases": 45,
+  "horizon_months": 60,
+  "net_monthly_service_flow_currency": 750.0,
+  "terminal_ex_dividend_claim_value_currency": 150000.0,
+  "base_discount_rate": 0.08,
+  "base_immediate": [
+    37233.677512982045,
+    102087.47955506294,
+    139321.157068045
+  ],
+  "base_delay_12": [
+    28599.03412373536,
+    102087.47955506294,
+    130686.51367879829
+  ],
+  "base_delay_36": [
+    13201.178971443573,
+    102087.47955506294,
+    115288.65852650651
+  ],
+  "base_hazard_05": [
+    33041.164041703865,
+    78993.34563712866,
+    112034.50967883252
+  ],
+  "interpretation": "Selected-input finite-horizon present value of one specified residential claim. Use-flow is net rent OR imputed service; common ex-dividend terminal payoff covers post-horizon value. Not a market estimate or a construction-cost forecast."
+}

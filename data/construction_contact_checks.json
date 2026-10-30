@@ -1,0 +1,65 @@
+[
+  {
+    "stage": 0,
+    "active_units": 0,
+    "interpenetrating_pairs": 0,
+    "positive_area_face_contacts": 0,
+    "units_geometrically_connected_to_ground_mat": 0
+  },
+  {
+    "stage": 1,
+    "active_units": 126,
+    "interpenetrating_pairs": 0,
+    "positive_area_face_contacts": 227,
+    "units_geometrically_connected_to_ground_mat": 126
+  },
+  {
+    "stage": 2,
+    "active_units": 266,
+    "interpenetrating_pairs": 0,
+    "positive_area_face_contacts": 530,
+    "units_geometrically_connected_to_ground_mat": 266
+  },
+  {
+    "stage": 3,
+    "active_units": 408,
+    "interpenetrating_pairs": 0,
+    "positive_area_face_contacts": 808,
+    "units_geometrically_connected_to_ground_mat": 408
+  },
+  {
+    "stage": 4,
+    "active_units": 728,
+    "interpenetrating_pairs": 0,
+    "positive_area_face_contacts": 1680,
+    "units_geometrically_connected_to_ground_mat": 728
+  },
+  {
+    "stage": 5,
+    "active_units": 836,
+    "interpenetrating_pairs": 0,
+    "positive_area_face_contacts": 1974,
+    "units_geometrically_connected_to_ground_mat": 836
+  },
+  {
+    "stage": 6,
+    "active_units": 854,
+    "interpenetrating_pairs": 0,
+    "positive_area_face_contacts": 2031,
+    "units_geometrically_connected_to_ground_mat": 854
+  },
+  {
+    "stage": 7,
+    "active_units": 694,
+    "interpenetrating_pairs": 0,
+    "positive_area_face_contacts": 1563,
+    "units_geometrically_connected_to_ground_mat": 694
+  },
+  {
+    "stage": 8,
+    "active_units": 534,
+    "interpenetrating_pairs": 0,
+    "positive_area_face_contacts": 1095,
+    "units_geometrically_connected_to_ground_mat": 534
+  }
+]

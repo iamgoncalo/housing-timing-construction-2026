@@ -1,0 +1,44 @@
+{
+  "units": 854,
+  "floor_units": 126,
+  "wall_units": 282,
+  "roof_units": 126,
+  "temporary_units": 320,
+  "final_building_units": 534,
+  "returned_units": 320,
+  "footprint_m": [
+    4.2,
+    5.4
+  ],
+  "clear_room_m": [
+    3.6,
+    4.8,
+    2.4
+  ],
+  "unit_dimensions_m": [
+    0.6,
+    0.3,
+    0.24
+  ],
+  "unit_mass_kg": 15.0,
+  "roof_area_m2": 22.680000000000003,
+  "roof_selected_action_kN_m2": 1.5,
+  "roof_total_gravity_kN": 52.560900000000004,
+  "roof_strip_width_m": 0.3,
+  "roof_strip_span_m": 3.9,
+  "roof_strip_overhang_each_m": 0.15,
+  "roof_strip_w_kN_m": 0.6952499999999999,
+  "roof_strip_Mmid_kNm": 1.3140224999999999,
+  "roof_strip_end_reaction_kN": 1.460025,
+  "selected_strip_effective_EI_Nm2": 250000.0,
+  "roof_strip_bending_deflection_mm": 8.317703763281248,
+  "selected_strip_limit_mm": 13.0,
+  "minimum_selected_central_k_MNm_rad": 0.27362043594187807,
+  "one_rib_weight_kN": 23.544,
+  "one_rib_plan_area_m2": 2.88,
+  "one_rib_pressure_all_roof_kPa": 26.4253125,
+  "one_rib_gravity_restoring_moment_kNm": 7.0632,
+  "one_rib_full_compression_eccentricity_limit_m": 0.09999999999999999,
+  "two_module_cantilever_gravity_moment_Nm": 264.87,
+  "interpretation": "Prescribed whole-building geometry, conserved identity inventory and gravity/stiffness screening. Selected loading and equivalent rigidity. These are required support and test conditions, not measured construction stability or autonomous execution."
+}

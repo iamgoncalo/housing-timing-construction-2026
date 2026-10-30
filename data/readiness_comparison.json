@@ -1,0 +1,29 @@
+[
+  {
+    "case": "Baseline",
+    "site_ready": 6,
+    "assembly_duration": 12,
+    "assembly_end": 18,
+    "utility_ready": 18,
+    "acceptance_start": 18,
+    "occupation": 19
+  },
+  {
+    "case": "Faster assembly",
+    "site_ready": 6,
+    "assembly_duration": 6,
+    "assembly_end": 12,
+    "utility_ready": 18,
+    "acceptance_start": 18,
+    "occupation": 19
+  },
+  {
+    "case": "Coordinated readiness",
+    "site_ready": 6,
+    "assembly_duration": 6,
+    "assembly_end": 12,
+    "utility_ready": 12,
+    "acceptance_start": 12,
+    "occupation": 13
+  }
+]

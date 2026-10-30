@@ -1,0 +1,45 @@
+{
+  "states": [
+    {
+      "module": "M07",
+      "theta_deg": 0,
+      "centre_m": [
+        0.3,
+        0.6
+      ],
+      "contact_state": "A engaged; alignment accepted"
+    },
+    {
+      "module": "M07",
+      "theta_deg": 45,
+      "centre_m": [
+        0.21213203435596426,
+        0.8121320343559641
+      ],
+      "contact_state": "A retained; swept volume checked"
+    },
+    {
+      "module": "M07",
+      "theta_deg": 90,
+      "centre_m": [
+        1.8369701987210297e-17,
+        0.8999999999999999
+      ],
+      "contact_state": "A + B engaged; B load test"
+    },
+    {
+      "module": "M07",
+      "theta_deg": 90,
+      "centre_m": [
+        1.8369701987210297e-17,
+        0.8999999999999999
+      ],
+      "contact_state": "B accepted; A release conditional"
+    }
+  ],
+  "mass_kg": 15,
+  "length_m": 0.6,
+  "peak_gravity_moment_Nm": 44.145,
+  "potential_rise_J": 44.145,
+  "interpretation": "Prescribed 2D local motion geometry and gravity screening; not a controller, collision proof or structural simulation."
+}

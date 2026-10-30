@@ -1,0 +1,12 @@
+{
+  "horizon_months": 60,
+  "initial_territorial_stock": 10000,
+  "initial_unmet_households": 300,
+  "new_need_per_month": 10,
+  "parallel_sites": 120,
+  "baseline_work_months": 12,
+  "handover_months": 1,
+  "matched_allocation_share": 0.6,
+  "quality_assumption": "Every counted completion passes the same declared functional and structural acceptance gates",
+  "initial_pipeline": "Empty new programme at month zero; existing territorial stock is tracked separately"
+}
